@@ -72,4 +72,29 @@ public class BinaryTree {
         // visit current node
         System.out.print(tn.getEntry() + " ");
     }
+
+
+    public boolean contains(int x) {
+        return contains(root, x);
+}
+
+    private boolean contains (BinaryTreeNode tn, int x) {
+        if (tn == null) {
+            return false;
+        }
+        // search in preoder
+        // compare x with current node
+        if (tn.getEntry() == x) {
+            // base case 2: x found
+            return true;
+        }
+        // search in left and in right subtree
+        
+        return contains(tn.getLeftChild(), x) || contains(tn.getRightChild(), x);
+        
+        
+    }
+
+
+
 }
