@@ -71,6 +71,12 @@ public class listenMain {
         BinaryTreeNode sieben = new BinaryTreeNode(7, zwei, eins);
         BinaryTree t = new BinaryTree(sieben);
 
+        t.printPreorder();
+        System.out.println("das war preorder");
+        t.printInorder();
+        System.out.println("das war inorder");
+        t.printPostorder();
+        System.out.println("das war postorder");
     }
 
 }
