@@ -73,10 +73,16 @@ public class listenMain {
 
         t.printPreorder();
         System.out.println("das war preorder");
-        t.printInorder();
-        System.out.println("das war inorder");
-        t.printPostorder();
-        System.out.println("das war postorder");
+//        t.printInorder();
+//        System.out.println("das war inorder");
+//        t.printPostorder();
+//        System.out.println("das war postorder");
+        
+        
+        
+        boolean contains = t.contains(10);
+        System.out.println(contains);
+        
     }
 
 }
