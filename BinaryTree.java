@@ -58,7 +58,7 @@ public class BinaryTree {
 
     public void printPostorder() {
         // start with root
-        printInorder(root);
+        printPostorder(root);
     }
 
     private void printPostorder(BinaryTreeNode tn) {
