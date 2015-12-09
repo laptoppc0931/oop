@@ -15,5 +15,26 @@ public class DoublyLinkedListNode {
     private DoublyLinkedListNode next;
     private DoublyLinkedListNode prev;
 
+    public DoublyLinkedListNode(String value, DoublyLinkedListNode prevNode) {
+        this.entry = value;
+        this.next = null;
+        this.prev = prevNode;
+    }
+
+    public DoublyLinkedListNode getNext() {
+        return next;
+    }
+
+    public void setNext(DoublyLinkedListNode nextNode) {
+        this.next = nextNode;
+    }
+
+    public String getEntry() {
+        return entry;
+    }
+    
+    
+    
     
 } // EOF
+
